@@ -1,0 +1,115 @@
+// Variables
+$light-color: #eee;
+$dark-color: #333;
+$gray-color: #4f4f4f;
+
+// Default Styling
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+    color: $dark-color;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+}
+
+img {
+    max-width: 539.22px;
+    max-height: 447.43px;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+h3 {
+    font-size: 3rem;
+}
+
+h4 {
+    font-size: 2.5rem;
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+h6 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+// Main Header
+#main-header {
+    h6 {
+        margin: 2.5rem 4.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-family: 'Inconsolata', monospace;
+    }
+}
+
+// Main Section
+#main-section {
+    #wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    #img-div {
+        margin-right: 2.5rem;
+    }
+
+    #content-div {
+        padding: 1rem 0;
+
+        p {
+            margin: 1.5rem 0;
+            color: $gray-color;
+        }
+
+        .btn {
+            text-align: center;
+            padding: 0.8rem;
+            font-family: 'Space Mono', monospace;
+            text-transform: uppercase;
+            color: $light-color;
+            background: $dark-color;
+            border: none;
+            cursor: pointer;
+
+            &:hover {
+                transition: background 0.3s ease;
+                background: lighten($color: $dark-color, $amount: 3%);
+            }
+        }
+    }
+}
+
+// Footer
+#main-footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
